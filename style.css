@@ -1,0 +1,424 @@
+/* =========================
+   GLOBAL SETTINGS
+========================= */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font-family:'Poppins',sans-serif;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:linear-gradient(
+        135deg,
+        #0066ff,
+        #00c6ff
+    ) !important;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+.navbar-brand{
+    color:white !important;
+    font-weight:700;
+    font-size:24px;
+}
+
+.nav-link{
+    color:white !important;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#eaf6ff !important;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   HOME SECTION
+========================= */
+
+.hero-section{
+    min-height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #0066ff,
+        #00c6ff,
+        #ffffff
+    ) !important;
+
+    display:flex;
+    align-items:center;
+
+    padding-top:80px;
+}
+
+/* =========================
+   ALL SECTIONS
+========================= */
+
+#about,
+#skills,
+#education,
+#projects,
+#certifications,
+#achievements,
+#resume,
+#contact{
+
+    background:linear-gradient(
+        135deg,
+        #0066ff,
+        #00c6ff,
+        #ffffff
+    ) !important;
+
+    
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+section h2{
+    color:white !important;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-align:center;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card{
+    background:rgba(255,255,255,.95);
+
+    border:none;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.15);
+
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.25);
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-container{
+    display:inline-block;
+
+    padding:10px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        45deg,
+        #ffffff,
+        #00c6ff
+    );
+}
+
+.profile-img{
+    width:320px;
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    transition:.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary{
+    background:#0066ff;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#004de6;
+}
+
+.btn-warning,
+.btn-success{
+    border:none;
+}
+
+.btn{
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   SKILLS PROGRESS BAR
+========================= */
+
+.progress{
+    height:10px;
+    border-radius:20px;
+}
+
+.progress-bar{
+    border-radius:20px;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge{
+    font-size:14px;
+    border-radius:20px;
+    padding:8px 12px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-card{
+    background:white;
+    border-radius:20px;
+}
+
+.strength-box{
+    background:white;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.strength-box:hover{
+    background:#0066ff;
+    color:white;
+    transform:scale(1.05);
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.form-control{
+    border-radius:12px;
+}
+
+.form-control:focus{
+    border-color:#0066ff;
+    box-shadow:0 0 10px rgba(0,102,255,.3);
+}
+
+/* =========================
+   TOP BUTTON
+========================= */
+
+#topBtn{
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    z-index:999;
+
+    background:#0066ff;
+
+    border:none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:linear-gradient(
+        135deg,
+        #0066ff,
+        #00c6ff
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    font-weight:600;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .profile-img{
+        width:220px;
+        height:220px;
+    }
+
+    .navbar-brand{
+        font-size:20px;
+    }
+
+    .hero-section{
+        text-align:center;
+    }
+
+    section{
+        padding:60px 20px;
+    }
+}
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    z-index:999;
+}
+
+.whatsapp-btn:hover{
+    background:#1ebe5d;
+    color:white;
+    transform:scale(1.1);
+    transition:0.3s;
+}
+.custom-navbar{
+    background: linear-gradient(90deg,#0f172a,#1e3a8a);
+    padding:12px 0;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.navbar-brand{
+    font-size:24px;
+    color:#fff !important;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-weight:500;
+    margin:0 8px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#facc15 !important;
+}
+
+.navbar-toggler{
+    background:rgba(255,255,255,.15);
+    padding:8px 12px;
+    border-radius:10px;
+}
+
+#languageSelect{
+    min-width:150px;
+    border-radius:30px;
+}
+
+/* Mobile */
+@media(max-width:991px){
+
+    .navbar-collapse{
+        background:#0f172a;
+        padding:20px;
+        margin-top:15px;
+        border-radius:15px;
+    }
+
+    .nav-link{
+        padding:12px;
+        border-bottom:1px solid rgba(255,255,255,.1);
+    }
+
+    #languageSelect{
+        width:100%;
+        margin-top:15px;
+    }
+}
+
+/* Common style for all section headings */
+section h2 {
+    font-size: 2.5rem !important;   /* Same size for all headings */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.home-profile-img{
+    width:400px !important;
+    height:400px !important;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #fff;
+    transition:0.4s;
+}
+
+.home-profile-img:hover{
+    transform:scale(1.05);
+}
+
+
+
+body{
+    padding-top: -60px !important;
+}
+
+.footer-bottom{
+    background-color: black !important;
+    color:#fff !important;
+}
+
+
